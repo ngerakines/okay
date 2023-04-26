@@ -1,0 +1,22 @@
+[package]
+name = "okay"
+version = "1.0.0"
+edition = "2021"
+description = "A very small HTTP server that has configurable started and ready probes."
+authors = ["Nick Gerakines <nick.gerakines@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/ngerakines/okay"
+homepage = "https://github.com/ngerakines/okay"
+license = "MIT"
+publish = true
+
+[dependencies]
+anyhow = "1.0.70"
+ctrlc = { version = "3.2.5", features = ["termination"] }
+humantime = "2.1.0"
+tiny_http = "0.12.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
