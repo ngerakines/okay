@@ -11,7 +11,7 @@ license = "MIT"
 publish = true
 
 [dependencies]
-anyhow = "1.0.71"
+anyhow = "1.0.75"
 ctrlc = { version = "3.3.0", features = ["termination"] }
 humantime = "2.1.0"
 tiny_http = "0.12.0"
